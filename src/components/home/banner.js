@@ -49,7 +49,7 @@ const Bannersection = styled.div`
 display:flex;
 justify-content:center;
 align-items:center;
-padding:80px 0;
+padding:80px 0px;
 display:flex;
 width:100%;
 float:left;
