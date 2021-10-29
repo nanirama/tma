@@ -15,9 +15,9 @@ const Footer = () => {
               <Item>
                  <Appstore>
                     <Image>
-                       <StaticImage src="../../images/play-store.png" alt="" />
+                       <StaticImage src="../images/play-store.png" alt="" />
                     </Image>
-                       <StaticImage src="../../images/app-store.png" alt="" />
+                       <StaticImage src="../images/app-store.png" alt="" />
                  </Appstore>
               </Item>
            </Grid>
@@ -94,7 +94,6 @@ const Wrapper = styled.div`
 background:#fafafa;
 width:100%;
 float:left;
-
  }
 `;
 
