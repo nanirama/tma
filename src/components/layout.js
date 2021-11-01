@@ -14,7 +14,7 @@ import Footer from "./footer"
 import GlobalStyle from '../globalStyles';
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, bgcolor }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyle/>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />      
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} bgcolor={bgcolor} />      
         <main>{children}</main>
        <Footer />  
     </>

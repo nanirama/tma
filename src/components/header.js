@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
 
-const Header = () => {
+const Header = ({bgcolor}) => {
   const [menuVisible, setMenuVisible] = useState(false);
   const toggleMenu = () => {
   const el = document.getElementById("nav");
@@ -28,10 +28,11 @@ const Header = () => {
   else hamburger.classList.remove("cross");
   }, [menuVisible]);
   return (
-  <Wrapper>
+  <Wrapper bgcolor={bgcolor}>
      <Container>
         <LogoAndLinks>
            <Logo>
+             <Link to="/">
               <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                  <path d="M0 8.78136L16.6217 0V41.2186L0 50V8.78136Z" fill="url(#paint0_linear_322:375)"/>
                  <path d="M33.3779 8.78136L49.9997 0L49.9101 41.2186L33.3779 50V8.78136Z" fill="url(#paint1_linear_322:375)"/>
@@ -49,6 +50,7 @@ const Header = () => {
                     </linearGradient>
                  </defs>
               </svg>
+              </Link>
            </Logo>
            <MenuIcon onClick={toggleMenu} id="hamburger-icon">
               <div />
@@ -58,7 +60,7 @@ const Header = () => {
            </MenuIcon>
            <Links id="nav">
               <li>
-                 <Link to="/">
+                 <Link to="/aboutus">
                  About Us
                  </Link>
               </li>
@@ -81,7 +83,7 @@ const Header = () => {
   export default Header;
 
 const Wrapper = styled.div`
-background:#fafafa;
+background:${props => props.bgcolor};
 padding: 10px 0px;
  }
 `;
@@ -89,7 +91,7 @@ padding: 10px 0px;
 const Container = styled.div`
   max-width: 1200px;
   margin: auto;
-  padding:0 15px
+  padding:20px 15px
 `;
 
 const LogoAndLinks = styled.div`
