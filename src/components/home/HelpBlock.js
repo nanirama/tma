@@ -9,42 +9,42 @@ const Help = () => {
           <HelpBlock>
              <h2>How We can help</h2>
              <Grid>
-                <Item>
+                <Item data-aos="fade-up" data-aos-anchor-placement="top-center">
                    <Image>
                       <StaticImage src="../../images/h-icon.png" alt="" />
                    </Image>
                    <h4>Shows Latest Jobs</h4>
                    <Paragraph>We Publishes Abroad job opportunities<br/> from licensed recruiters</Paragraph>
                 </Item>
-                <Item>
+                <Item data-aos="fade-up" data-aos-anchor-placement="top-center">
                    <Image>
                       <StaticImage src="../../images/h-icon-2.png" alt="" />
                    </Image>
                    <h4>Abroad Study</h4>
                    <Paragraph>Our platform helps students to find their<br/> favorite courses in their Dream destinations</Paragraph>
                 </Item>
-                <Item>
+                <Item data-aos="fade-up" data-aos-anchor-placement="top-center">
                    <Image>
                       <StaticImage src="../../images/h-icon-3.png" alt="" />
                    </Image>
                    <h4>Master Class</h4>
                    <Paragraph>instructional guides and tutorials videos<br/> on various immigration procedures</Paragraph>
                 </Item>
-                <Item>
+                <Item data-aos="fade-up" data-aos-anchor-placement="top-center">
                    <Image>
                       <StaticImage src="../../images/h-icon-4.png" alt="" />
                    </Image>
                    <h4>Interactive Sessions</h4>
                    <Paragraph>Live Q&A and Group Discussions with<br/> experts</Paragraph>
                 </Item>
-                <Item>
+                <Item data-aos="fade-up" data-aos-anchor-placement="top-center">
                    <Image>
                       <StaticImage src="../../images/h-icon-5.png" alt="" />
                    </Image>
                    <h4>Career Advice</h4>
                    <Paragraph>1-On-1 Personal Career advices from<br/> expert career advisors</Paragraph>
                 </Item>
-                <Item>
+                <Item data-aos="fade-up" data-aos-anchor-placement="top-center">
                    <Image>
                       <StaticImage src="../../images/h-icon-6.png" alt="" />
                    </Image>

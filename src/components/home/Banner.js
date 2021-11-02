@@ -3,9 +3,18 @@ import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components";
+import AOS from 'aos';
 import img from '../../images/banner_bg.png';
 
 const Banner = () => {   
+   React.useEffect(() => {
+      AOS.init({
+        duration: 1000,
+          delay: 50,
+          once: true
+      });
+      AOS.refresh();
+  }, [])
    const { BImage } = useStaticQuery(
       graphql`
         query {
@@ -20,7 +29,7 @@ const Banner = () => {
   return(
   <Wrapper>
      <Container>
-        <Bannersection>
+        <Bannersection data-aos="fade-up">
            <Grid>
               <Item>
                  <h1>Download Official Take Me Abroad App</h1>

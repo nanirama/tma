@@ -8,9 +8,9 @@ const Testimonials = () => {
   <Wrapper>
      <Container>
         <TestimonialBlock>
-           <h2>What our clients have to say?</h2>
+           <h2 data-aos="fade-down" data-aos-anchor-placement="top-center">What our clients have to say?</h2>
            <Grid>
-              <Item>
+              <Item data-aos="fade-up-right" data-aos-anchor-placement="top-center">
                  <ReviewBox>
                     <h4>Title Here</h4>
                     <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit magniaLorem ipsum dolor sit amet, consectetur adipiscing elit. Sit magniaLorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
@@ -18,7 +18,7 @@ const Testimonials = () => {
                  <StaticImage src="../../images/author-1.png" alt="" />
                  <AuthorName>Wade Warren</AuthorName>
               </Item>
-              <Item>
+              <Item data-aos="fade-up" data-aos-anchor-placement="top-center">
                  <ReviewBox>
                     <h4>Title Here</h4>
                     <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit magniaLorem ipsum dolor sit amet, consectetur adipiscing elit. Sit magniaLorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
@@ -26,7 +26,7 @@ const Testimonials = () => {
                  <StaticImage src="../../images/author-2.png" alt="" />
                  <AuthorName>Cody Fisher</AuthorName>
               </Item>
-              <Item>
+              <Item data-aos="fade-up-left" data-aos-anchor-placement="top-center">
                  <ReviewBox>
                     <h4>Title Here</h4>
                     <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit magniaLorem ipsum dolor sit amet, consectetur adipiscing elit. Sit magniaLorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>

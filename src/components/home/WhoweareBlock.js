@@ -7,12 +7,12 @@ const WhoweareBlock = () => {
   <Wrapper id="about">
      <Container>
         <Grid>
-           <Item>
+           <Item data-aos="fade-right">
               <Image>
                  <StaticImage src="../../images/team-success.png" alt="" />
               </Image>
            </Item>
-           <Item>
+           <Item data-aos="fade-left">
               <TextBlock>
                  <h2>Who we are?</h2>
                  <p>Take me abroad is a prototype designed and developed by Mr. Jerin Francis and his team under Norvel Technologies Pvt Ltd to protect its subscribers who are professionals as well as students against fake Job scams as well as fraudsters.</p>

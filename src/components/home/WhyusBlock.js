@@ -8,7 +8,7 @@ const WhyusBlock = () => {
   <Wrapper>
      <Container>
         <Grid>
-           <Item>
+           <Item data-aos="fade-right">
               <TextBlock>
                  <h2>Why Take Me Abroad!</h2>
                  <p>We offer value-based services to students & professionals seeking an opportunity to study/work abroad. Our services include educating and helping the students, as well as professionals, make the right decision based on their credentials, areas of expertise, course preferences, work experience budget and other requirements and providing them personalized counselling on courses, permanent residency and related processes, visa procurement and post landing services. </p>
@@ -19,7 +19,7 @@ const WhyusBlock = () => {
                  </Button>
               </TextBlock>
            </Item>
-           <Item>
+           <Item data-aos="fade-left">
               <Image>
                  <StaticImage src="../../images/creative-solutions.png" alt="" />
               </Image>
