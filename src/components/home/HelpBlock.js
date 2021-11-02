@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Help = () => {   
     return(
-    <Wrapper>
+    <Wrapper id="features">
        <Container>
           <HelpBlock>
              <h2>How We can help</h2>

@@ -1,9 +1,22 @@
 import * as React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components";
 import img from '../../images/banner_bg.png';
 
 const Banner = () => {   
+   const { BImage } = useStaticQuery(
+      graphql`
+        query {
+         BImage: file(relativePath: {eq: "homebanner.png"}) {
+            childImageSharp {
+               gatsbyImageData(layout: CONSTRAINED)
+            }
+          }
+        }
+      `
+    )
   return(
   <Wrapper>
      <Container>
@@ -14,14 +27,18 @@ const Banner = () => {
                  <p><b>Keep yourself updated with Abroad career options on the go</b></p>
                  <Appstore>
                     <Image>
-                       <StaticImage src="../../images/play-store.png" alt="" />
+                        <a href="https://play.google.com/store/apps/details?id=com.takemeabroad&hl=en_IN&gl=US" target="_blank" rel="noreferrer">
+                           <StaticImage src="../../images/play-store.png" alt="" />
+                        </a>
                     </Image>
                     <StaticImage src="../../images/app-store.png" alt="" />
                  </Appstore>
               </Item>
               <Item>
                  <BannerImage>
-                    <StaticImage src="../../images/banner_img.png" alt="" />
+                     <GatsbyImage
+                        image={getImage(BImage)}
+                     />  
                  </BannerImage>
               </Item>
            </Grid>
@@ -78,11 +95,11 @@ background-position:center;
 background-repeat:no-repeat;
 width:100%;
 text-align:center;
-@media (max-width: 479px) {
-  background-size:100%;
+@media (max-width: 599px) {
+  background-size:80%;
+  padding:0px 4rem;
 
 }
-
 `;
 const Item = styled.div`
 

@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const WhoweareBlock = () => {   
   return(
-  <Wrapper>
+  <Wrapper id="about">
      <Container>
         <Grid>
            <Item>

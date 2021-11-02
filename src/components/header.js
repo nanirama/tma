@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Header = ({bgcolor}) => {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -59,7 +60,9 @@ const Header = ({bgcolor}) => {
               <div />
            </MenuIcon>
            <Links id="nav">
-              <li>
+              <AnchorLink href='#about'>About Us</AnchorLink>
+              <AnchorLink href='#features'>Features</AnchorLink>
+              {/* <li>
                  <Link to="/aboutus">
                  About Us
                  </Link>
@@ -68,10 +71,10 @@ const Header = ({bgcolor}) => {
                  <Link to="/">
                  Features
                  </Link>
-              </li>
+              </li> */}
               <LoginBtn>
                  <Link to="/">
-                 <span>Login</span>
+                 <span>Home</span>
                  </Link>
               </LoginBtn>
            </Links>
@@ -155,6 +158,18 @@ const Links = styled.ul`
   a {
     text-decoration: none;
     color: #2D3748;
+    display: grid;
+      place-items: center;
+      padding: 5px 20px;
+      height: 100%;
+      font-size:16px;
+    font-weight:500;
+     
+      @media (max-width: 992px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
   }
 
   > li {
