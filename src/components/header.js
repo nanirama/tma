@@ -29,7 +29,7 @@ const Header = ({bgcolor}) => {
   else hamburger.classList.remove("cross");
   }, [menuVisible]);
   return (
-  <Wrapper bgcolor={bgcolor}>
+  <Wrapper bgcolor={bgcolor} id="home">
      <Container>
         <LogoAndLinks>
            <Logo>
@@ -62,6 +62,7 @@ const Header = ({bgcolor}) => {
            <Links id="nav">
               <AnchorLink href='#about'>About Us</AnchorLink>
               <AnchorLink href='#features'>Features</AnchorLink>
+              <Link href='/'>Home</Link>
               {/* <li>
                  <Link to="/aboutus">
                  About Us
@@ -72,11 +73,11 @@ const Header = ({bgcolor}) => {
                  Features
                  </Link>
               </li> */}
-              <LoginBtn>
+              {/* <LoginBtn>
                  <Link to="/">
                  <span>Home</span>
                  </Link>
-              </LoginBtn>
+              </LoginBtn> */}
            </Links>
         </LogoAndLinks>
      </Container>

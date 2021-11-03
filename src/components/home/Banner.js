@@ -28,10 +28,14 @@ const Banner = () => {
                  <Appstore>
                     <Image>
                         <a href="https://play.google.com/store/apps/details?id=com.takemeabroad&hl=en_IN&gl=US" target="_blank" rel="noreferrer">
-                           <StaticImage src="../../images/play-store.png" alt="" />
+                        <StaticImage src="../../images/astore.svg" alt="" />
                         </a>
                     </Image>
-                    <StaticImage src="../../images/app-store.png" alt="" />
+                    <Image>
+                        <a href="https://play.google.com/store/apps/details?id=com.takemeabroad&hl=en_IN&gl=US" target="_blank" rel="noreferrer">
+                        <StaticImage src="../../images/gplay.svg" alt="" />
+                        </a>
+                    </Image>
                  </Appstore>
               </Item>
               <Item>
@@ -124,6 +128,9 @@ margin-top:50px;
 `;
 
 const Image = styled.div`
-margin-right:20px
+margin-right:20px;
+padding:0px;
+width:162px;
+height:50px;
 `;
 
