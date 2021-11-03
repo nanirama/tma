@@ -3,18 +3,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components";
-import AOS from 'aos';
 import img from '../../images/banner_bg.png';
 
 const Banner = () => {   
-   React.useEffect(() => {
-      AOS.init({
-        duration: 1000,
-          delay: 50,
-          once: true
-      });
-      AOS.refresh();
-  }, [])
    const { BImage } = useStaticQuery(
       graphql`
         query {
@@ -29,7 +20,7 @@ const Banner = () => {
   return(
   <Wrapper>
      <Container>
-        <Bannersection data-aos="fade-up">
+        <Bannersection>
            <Grid>
               <Item>
                  <h1>Download Official Take Me Abroad App</h1>
@@ -45,9 +36,7 @@ const Banner = () => {
               </Item>
               <Item>
                  <BannerImage>
-                     <GatsbyImage
-                        image={getImage(BImage)}
-                     />  
+                     <StaticImage src="../../images/banner_img.svg" alt="" />
                  </BannerImage>
               </Item>
            </Grid>
@@ -104,11 +93,21 @@ background-position:center;
 background-repeat:no-repeat;
 width:100%;
 text-align:center;
-@media (max-width: 599px) {
+@media only screen and (min-width:1199px) {
+   padding:0px 6rem;
+}
+@media only screen and (min-width:992px) and (max-width:1199px) {
+   padding:0px 3rem;
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
+   padding:0px 24%;
+}
+@media (max-width: 768px) {
   background-size:80%;
-  padding:0px 4rem;
+  padding:0px 20%;
 
 }
+
 `;
 const Item = styled.div`
 

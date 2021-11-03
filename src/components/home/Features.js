@@ -7,9 +7,9 @@ const Features = () => {
     <Wrapper>
        <Container>
           <FeatureBlock>
-             <h2 data-aos="fade-down" data-aos-anchor-placement="top-center">Our Top Features</h2>
+             <h2>Our Top Features</h2>
              <Grid>
-                <Item data-aos="fade-up-right" data-aos-anchor-placement="top-center">
+                <Item>
                    <Icon>
                       <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                          <path fill-rule="evenodd" clip-rule="evenodd" d="M30.9881 6.90234C27.7764 6.90234 25.1729 9.50591 25.1729 12.7176V19.7802H36.8033V12.7176C36.8033 9.50591 34.1997 6.90234 30.9881 6.90234ZM30.9881 9.33725C29.2808 9.33725 27.8968 10.7212 27.8968 12.4285V16.0345H34.0793V12.4285C34.0793 10.7212 32.6953 9.33725 30.9881 9.33725Z" fill="#FF5C58"/>
@@ -29,7 +29,7 @@ const Features = () => {
                    <h4>Jobs</h4>
                    <Paragraph>Abroad job options through licensed<br/> Recruiters</Paragraph>
                 </Item>
-                <Item data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <Item>
                    <Icon>
                       <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                          <g clip-path="url(#clip0_357:107)">
@@ -60,7 +60,7 @@ const Features = () => {
                    <h4>Study Abroad</h4>
                    <Paragraph>Study Abroad destinations and latest<br/> Courses</Paragraph>
                 </Item>
-                <Item data-aos="fade-up-left" data-aos-anchor-placement="top-center">
+                <Item>
                    <Icon>
                       <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                          <path d="M5.625 49.0837H56.4589C56.4589 50.0219 55.6984 50.7824 54.7602 50.7824H7.32351C6.38547 50.7824 5.625 50.0219 5.625 49.0837Z" fill="#7C83FD"/>

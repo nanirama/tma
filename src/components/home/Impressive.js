@@ -7,15 +7,18 @@ const Impressive = () => {
   <Wrapper>
      <Container>
         <Grid>
-           <Item data-aos="fade-right">
-              <Image>
+           <Item>
+              <Imagedesktop>
                  <StaticImage src="../../images/product-planning-discussion.png" alt="" />
-              </Image>
+              </Imagedesktop>
            </Item>
-           <Item data-aos="fade-left">
+           <Item>
               <TextBlock>
                  <h2>Its Impressive how we are growing so fast</h2>
                  <p>Our community started in late 2020, till now Take Me Abroad helped thousands of students to achieve their goals through personal career advices. We are now one of  the biggest abroad communities in India</p>
+                  <Imagemobile>
+                     <StaticImage src="../../images/product-planning-discussion.png" alt="" />
+                  </Imagemobile>
                  <CounterBlock>
                     <CountItem>
                        <SubHeading>25.4K+</SubHeading>
@@ -73,10 +76,16 @@ display: flex;
 const Item = styled.div`
 
 `;
-const Image = styled.div`
+const Imagedesktop = styled.div`
 @media (max-width: 991px) {
-margin-bottom:30px;
+display:none;
 }
+`;
+const Imagemobile = styled.div`
+@media (min-width: 991px) {
+   display:none;
+}
+margin-bottom:30px;
 `;
 const TextBlock = styled.div`
 padding-right:30px;
