@@ -9,7 +9,7 @@ const WhoweareBlock = () => {
         <Grid>
            <Item>
               <Image>
-                 <StaticImage src="../../images/team-success.png" alt="" />
+                 <StaticImage src="../../images/about-tma.svg" alt="" />
               </Image>
            </Item>
            <Item>

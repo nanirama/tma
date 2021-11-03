@@ -21,7 +21,7 @@ const WhyusBlock = () => {
            </Item>
            <Item>
               <Image>
-                 <StaticImage src="../../images/creative-solutions.png" alt="" />
+                 <StaticImage src="../../images/why-tma.svg" alt="" />
               </Image>
            </Item>
         </Grid>
@@ -75,7 +75,6 @@ justify-content:center;
   @media (max-width:991px) {
     margin-top:30px;
   }
-
 `;
 const Button = styled.button`
   outline: none;
