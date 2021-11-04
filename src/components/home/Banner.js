@@ -117,6 +117,7 @@ border:3px solid blue;
 }
 img{
    border:3px solid red;
+   width:100% !important;
 }
 `;
 const Item = styled.div`
