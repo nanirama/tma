@@ -6,6 +6,7 @@ import img from '../../images/banner_bg.png';
 import astore from "../../images/astore.svg";
 import gplay from "../../images/gplay.svg";
 import banImage from "../../images/bannerimg.svg";
+import whyUs from "../../images/why-tma.svg";
 
 const Banner = () => {   
    const { BImage } = useStaticQuery(
@@ -44,6 +45,7 @@ const Banner = () => {
               <Item>
                  <BannerImage>
                  <img src={banImage}/> 
+                 <img src={whyUs}/>
                  </BannerImage>
               </Item>
            </Grid>
