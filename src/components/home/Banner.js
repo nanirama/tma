@@ -2,6 +2,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components";
 import img from '../../images/banner_bg.png';
+import bimg from '../../images/banner_img.png';
 
 import astore from "../../images/astore.svg";
 import gplay from "../../images/gplay.svg";
@@ -45,7 +46,6 @@ const Banner = () => {
               <Item>
                  <BannerImage>
                  <img src={banImage}/> 
-                 <img src={whyUs}/>
                  </BannerImage>
               </Item>
            </Grid>
@@ -117,13 +117,17 @@ border:3px solid blue;
 @media (max-width: 768px) {
   background-size:80%;
   padding:0px 20%;
-
 }
 img{
    display:flex;
    flex-directon:column;
    border:3px solid red;
    width:100% !important;
+   @media (max-width: 768px) {
+      background-image:url(${bimg});
+      background-position:center;
+      background-repeat:no-repeat;
+    }
 }
 `;
 const Item = styled.div`
