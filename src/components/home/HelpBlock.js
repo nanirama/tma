@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components";
-import { StaticImage } from "gatsby-plugin-image"
 
 import helpImg1 from "../../images/physics.svg";
 import helpImg2 from "../../images/globus.svg";

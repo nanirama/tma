@@ -1,5 +1,4 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components";
 import { Link } from "gatsby";
 import whyUs from "../../images/why-tma.svg";

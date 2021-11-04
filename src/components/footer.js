@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 
 import astore from "../images/astore.svg";
@@ -45,7 +44,12 @@ const Footer = () => {
                        Privacy Policy
                        </Link>
                     </li>
-                    <li>
+                    <li className="show-desk">
+                       <a href="mailto:info@takemeabroad.in">
+                       info@takemeabroad.in
+                       </a>
+                    </li>
+                    <li className="show-mobile">
                        <a href="mailto:info@takemeabroad.in">
                        Contact
                        </a>
@@ -179,10 +183,26 @@ const Links = styled.ul`
     color: #7C838E;
   
   }
+  > li.show-desk{
+   @media (min-width: 991px) {
+      display:block
+   }  
+   @media (max-width: 991px) {
+      display:none
+   }  
+  }
+
+  > li.show-mobile{
+   @media (min-width: 991px) {
+      display:none
+   }  
+   @media (max-width: 991px) {
+      display:block
+   }  
+  }
 
   > li {
     margin:0;
-
     &:nth-of-type(1) a{
       padding-left:0;
      }

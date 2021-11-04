@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 import img from '../../images/arrow.png';
-
+import starIcon from "../../images/star-icon.svg";
 const Testimonials = () => {
   return (
   <Wrapper>
@@ -11,28 +11,52 @@ const Testimonials = () => {
            <h2>What our clients have to say?</h2>
            <Grid>
               <Item>
+                 <div>
                  <ReviewBox>
-                    <h4>Title Here</h4>
-                    <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit magniaLorem ipsum dolor sit amet, consectetur adipiscing elit. Sit magniaLorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+                    <StarIcon>
+                       <img src={starIcon}/>
+                       <img src={starIcon}/>
+                       <img src={starIcon}/>
+                       <img src={starIcon}/>
+                       <img src={starIcon}/>
+                     </StarIcon>
+                    <Paragraph>I am really satisfied with this application, jerin bro is really replying me back within an hour and his each point are damn correct...if any one out there trying to migrate by there own then I strongly recommend this application.....</Paragraph>
                  </ReviewBox>
-                 <StaticImage src="../../images/author-1.png" alt="" />
-                 <AuthorName>Wade Warren</AuthorName>
+                 <StaticImage src="../../images/testi-1.jpeg" alt="" />
+                 <AuthorName>Murali kumar</AuthorName>
+                 </div>
               </Item>
               <Item>
+              <div>
                  <ReviewBox>
-                    <h4>Title Here</h4>
-                    <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit magniaLorem ipsum dolor sit amet, consectetur adipiscing elit. Sit magniaLorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+                     <StarIcon>
+                       <img src={starIcon}/>
+                       <img src={starIcon}/>
+                       <img src={starIcon}/>
+                       <img src={starIcon}/>
+                       <img src={starIcon}/>
+                     </StarIcon>
+                    <Paragraph>This app helps us lot and it helped me lot. Big Thanks to Jerin he was so polite and was explaining clearly.</Paragraph>
                  </ReviewBox>
-                 <StaticImage src="../../images/author-2.png" alt="" />
-                 <AuthorName>Cody Fisher</AuthorName>
+                 <StaticImage src="../../images/testi-2.jpeg" alt="" />
+                 <AuthorName>Abin Jose</AuthorName>
+                 </div>
               </Item>
               <Item>
+              <div>
                  <ReviewBox>
-                    <h4>Title Here</h4>
-                    <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit magniaLorem ipsum dolor sit amet, consectetur adipiscing elit. Sit magniaLorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+                     <StarIcon>
+                       <img src={starIcon}/>
+                       <img src={starIcon}/>
+                       <img src={starIcon}/>
+                       <img src={starIcon}/>
+                       <img src={starIcon}/>
+                     </StarIcon>
+                    <Paragraph>Jerin and this app is doing a great service.I am hundred percent satisfied for their immediate response .I also appreciate their expertise in resolving issues regarding premium payments ,within a short span of time</Paragraph>
                  </ReviewBox>
-                 <StaticImage src="../../images/author-3.png" alt="" />
-                 <AuthorName>Robert Fox</AuthorName>
+                 <StaticImage src="../../images/testi-3.jpeg" alt="" />
+                 <AuthorName>Vedhu family</AuthorName>
+                 </div>
               </Item>
            </Grid>
         </TestimonialBlock>
@@ -72,7 +96,7 @@ display: grid;
 grid-template-columns: repeat(1fr);
 grid-gap: 20px 30px;
 justify-content:center;
-align-items:center;
+align-items: stretch;
 width:100%;
 margin-top:55px;
 
@@ -89,15 +113,22 @@ margin-top:55px;
 const Item = styled.div`
 display:flex;
 justify-content:center;
-align-items:center;
+align-items:stretch;
+align-content:center;
 flex-direction:column;
 text-align:center;
+   img{
+      width:44px;
+      height:44px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+   }
 `;
 const ReviewBox = styled.div`
 background-color:#fff;
 box-shadow: 0px 2px 13.3333px rgba(0, 0, 0, 0.04);
 border: 1px solid #F84663;
-// border-image-source: linear-gradient(180deg, rgba(252, 99, 82, 0) 0%, #F84663 102.03%);
 border-radius:6px;
 padding:50px 15px;
 margin-bottom:40px;
@@ -117,12 +148,22 @@ left:0;
 right:0;
   
 }
-
+@media (min-width: 992px) {
+   min-height:270px;
+}
 
 @media (max-width: 767px) {
   padding:30px 15px;
 }
 `;
+const StarIcon = styled.div`
+margin-bottom:10px;
+img{
+   width:25px;
+   height:25px;
+   margin:0px 3px;
+}
+`
 const Paragraph = styled.p`
 font-size:14px; 
 line-height:24px;

@@ -1,7 +1,5 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components";
 import img from '../../images/banner_bg.png';
 

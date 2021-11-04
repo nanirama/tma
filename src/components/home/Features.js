@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components";
-// import Backpack from "../../svg/backpack.svg";
 
 import feature1 from "../../images/feature1.svg";
 import feature2 from "../../images/feature2.svg";
