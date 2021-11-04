@@ -100,6 +100,7 @@ background-position:center;
 background-repeat:no-repeat;
 width:100%;
 text-align:center;
+border:3px solid blue;
 @media only screen and (min-width:1199px) {
    padding:0px 6rem;
 }
@@ -114,7 +115,9 @@ text-align:center;
   padding:0px 20%;
 
 }
-
+img{
+   border:3px solid red;
+}
 `;
 const Item = styled.div`
 
