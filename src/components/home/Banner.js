@@ -104,7 +104,6 @@ width:100%;
 text-align:center;
 display:flex;
 flex-directon:column;
-border:3px solid blue;
 @media only screen and (min-width:1199px) {
    padding:0px 6rem;
 }
@@ -121,7 +120,6 @@ border:3px solid blue;
 img{
    display:flex;
    flex-directon:column;
-   border:3px solid red;
    width:100% !important;
    @media (max-width: 768px) {
       background-image:url(${bimg});
