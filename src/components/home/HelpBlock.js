@@ -2,6 +2,12 @@ import React from "react"
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image"
 
+import helpImg1 from "../../images/physics.svg";
+import helpImg2 from "../../images/globus.svg";
+import helpImg3 from "../../images/video.svg";
+import helpImg4 from "../../images/pendilum.svg";
+import helpImg5 from "../../images/evaluation.svg";
+import helpImg6 from "../../images/rating.svg";
 const Help = () => {   
     return(
     <Wrapper id="features">
@@ -11,42 +17,42 @@ const Help = () => {
              <Grid>
                 <Item>
                    <Image>
-                      <StaticImage src="../../images/physics.svg" alt="" />
+                      <img src={helpImg1}/>
                    </Image>
                    <h4>Shows Latest Jobs</h4>
                    <Paragraph>We Publishes Abroad job opportunities<br/> from licensed recruiters</Paragraph>
                 </Item>
                 <Item>
                    <Image>
-                      <StaticImage src="../../images/globus.svg" alt="" />
+                     <img src={helpImg2}/>
                    </Image>
                    <h4>Abroad Study</h4>
                    <Paragraph>Our platform helps students to find their<br/> favorite courses in their Dream destinations</Paragraph>
                 </Item>
                 <Item>
                    <Image>
-                      <StaticImage src="../../images/video.svg" alt="" />
+                     <img src={helpImg3}/>
                    </Image>
                    <h4>Master Class</h4>
                    <Paragraph>instructional guides and tutorials videos<br/> on various immigration procedures</Paragraph>
                 </Item>
                 <Item>
                    <Image>
-                      <StaticImage src="../../images/pendilum.svg" alt="" />
+                     <img src={helpImg4}/>
                    </Image>
                    <h4>Interactive Sessions</h4>
                    <Paragraph>Live Q&A and Group Discussions with<br/> experts</Paragraph>
                 </Item>
                 <Item>
                    <Image>
-                      <StaticImage src="../../images/evaluation.svg" alt="" />
+                     <img src={helpImg5}/>
                    </Image>
                    <h4>Career Advice</h4>
                    <Paragraph>1-On-1 Personal Career advices from<br/> expert career advisors</Paragraph>
                 </Item>
                 <Item>
                    <Image>
-                      <StaticImage src="../../images/rating.svg" alt="" />
+                     <img src={helpImg6}/>
                    </Image>
                    <h4>Trust</h4>
                    <Paragraph>The platform you can rely on for<br/> generations</Paragraph>

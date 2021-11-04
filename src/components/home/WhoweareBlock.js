@@ -1,7 +1,7 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components";
-
+import whoWeImg from "../../images/about-tma.svg";
 const WhoweareBlock = () => {   
   return(
   <Wrapper id="about">
@@ -9,7 +9,7 @@ const WhoweareBlock = () => {
         <Grid>
            <Item>
               <Image>
-                 <StaticImage src="../../images/about-tma.svg" alt="" />
+                 <img src={whoWeImg}/>
               </Image>
            </Item>
            <Item>

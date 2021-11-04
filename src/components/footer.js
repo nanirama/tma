@@ -3,6 +3,9 @@ import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 
+import astore from "../images/astore.svg";
+import gplay from "../images/gplay.svg";
+
 const Footer = () => {
   return (
   <Wrapper>
@@ -15,10 +18,12 @@ const Footer = () => {
               <Item>
                  <Appstore>
                     <Image>
-                       <a href="https://play.google.com/store/apps/details?id=com.takemeabroad&hl=en_IN&gl=US" target="_blank" rel="noreferrer"><StaticImage src="../images/astore.svg" alt="" /></a>
+                       <a href="https://play.google.com/store/apps/details?id=com.takemeabroad&hl=en_IN&gl=US" target="_blank" rel="noreferrer">
+                       <img src={astore}/>
+                        </a>
                     </Image>
                     <Image>
-                       <StaticImage src="../images/gplay.svg" alt="" />
+                    <img src={gplay}/>
                     </Image>
                  </Appstore>
               </Item>

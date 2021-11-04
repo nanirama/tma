@@ -5,6 +5,10 @@ import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components";
 import img from '../../images/banner_bg.png';
 
+import astore from "../../images/astore.svg";
+import gplay from "../../images/gplay.svg";
+import banImage from "../../images/banner_img.svg";
+
 const Banner = () => {   
    const { BImage } = useStaticQuery(
       graphql`
@@ -28,19 +32,20 @@ const Banner = () => {
                  <Appstore>
                     <Image>
                         <a href="https://play.google.com/store/apps/details?id=com.takemeabroad&hl=en_IN&gl=US" target="_blank" rel="noreferrer">
-                        <StaticImage src="../../images/astore.svg" alt="" />
+                        <img src={astore}/>
                         </a>
                     </Image>
                     <Image>
-                        <a href="https://play.google.com/store/apps/details?id=com.takemeabroad&hl=en_IN&gl=US" target="_blank" rel="noreferrer">
-                        <StaticImage src="../../images/gplay.svg" alt="" />
+                        <a href="#" target="_blank" rel="noreferrer">
+                        <img src={gplay}/>
                         </a>
+
                     </Image>
                  </Appstore>
               </Item>
               <Item>
                  <BannerImage>
-                     <StaticImage src="../../images/banner_img.svg" alt="" />
+                 <img src={banImage}/> 
                  </BannerImage>
               </Item>
            </Grid>

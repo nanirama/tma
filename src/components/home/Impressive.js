@@ -1,6 +1,8 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components";
+import growingFast from "../../images/growing-fast.svg";
+
 
 const Impressive = () => {   
   return(
@@ -9,7 +11,7 @@ const Impressive = () => {
         <Grid>
            <Item>
               <Imagedesktop>
-                 <StaticImage src="../../images/product-planning-discussion.png" alt="" />
+               <img src={growingFast}/>
               </Imagedesktop>
            </Item>
            <Item>
@@ -17,7 +19,7 @@ const Impressive = () => {
                  <h2>Its Impressive how we are growing so fast</h2>
                  <p>Our community started in late 2020, till now Take Me Abroad helped thousands of students to achieve their goals through personal career advices. We are now one of  the biggest abroad communities in India</p>
                   <Imagemobile>
-                     <StaticImage src="../../images/growing-fast.svg" alt="" />
+                     <img src={growingFast}/>
                   </Imagemobile>
                  <CounterBlock>
                     <CountItem>
