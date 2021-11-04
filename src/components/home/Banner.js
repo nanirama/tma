@@ -5,7 +5,7 @@ import img from '../../images/banner_bg.png';
 
 import astore from "../../images/astore.svg";
 import gplay from "../../images/gplay.svg";
-import banImage from "../../images/banner_img.svg";
+import banImage from "../../images/bannerimg.svg";
 
 const Banner = () => {   
    const { BImage } = useStaticQuery(
