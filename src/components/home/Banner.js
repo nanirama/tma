@@ -1,5 +1,6 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components";
 import img from '../../images/banner_bg.png';
 import bimg from '../../images/banner_img.png';
@@ -10,17 +11,7 @@ import banImage from "../../images/bannerimg.svg";
 import whyUs from "../../images/why-tma.svg";
 
 const Banner = () => {   
-   const { BImage } = useStaticQuery(
-      graphql`
-        query {
-         BImage: file(relativePath: {eq: "homebanner.png"}) {
-            childImageSharp {
-               gatsbyImageData(layout: CONSTRAINED)
-            }
-          }
-        }
-      `
-    )
+
   return(
   <Wrapper>
      <Container>
@@ -44,7 +35,7 @@ const Banner = () => {
               </Item>
               <Item>
                  <BannerImage>
-                 <img src={banImage}/> 
+                 <StaticImage src="../../images/bannerimg.png" alt="A kitten" />
                  </BannerImage>
               </Item>
            </Grid>
@@ -120,10 +111,6 @@ img{
    display:flex;
    flex-directon:column;
    width:100% !important;
-   background-image:url(${bimg});
-   background-position:center;
-   background-repeat:no-repeat;
-   background-size:100% 100%;
 }
 `;
 const Item = styled.div`
