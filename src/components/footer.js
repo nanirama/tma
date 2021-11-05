@@ -16,16 +16,16 @@ const Footer = () => {
               </Item>
               <Item>
                  <Appstore>
-                    <Image>
-                       <a href="#" target="_blank" rel="noreferrer">
-                       <img src={astore}/>
-                        </a>
-                    </Image>
-                    <Image>
+                     <Image>
                         <a href="https://play.google.com/store/apps/details?id=com.takemeabroad&hl=en_IN&gl=US" target="_blank" rel="noreferrer">
-                        <img src={gplay}/>
+                           <img src={gplay}/>
                         </a>
                     </Image>
+                    <Image>
+                        <a href="#" target="_blank" rel="noreferrer">
+                           <img src={astore}/>
+                        </a>
+                    </Image>    
                  </Appstore>
               </Item>
            </Grid>

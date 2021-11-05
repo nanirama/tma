@@ -31,16 +31,15 @@ const Banner = () => {
                  <p><b>Keep yourself updated with Abroad career options on the go</b></p>
                  <Appstore>
                     <Image>
-                        <a href="#" target="_blank" rel="noreferrer">
-                        <img src={astore}/>
+                        <a href="https://play.google.com/store/apps/details?id=com.takemeabroad&hl=en_IN&gl=US" target="_blank" rel="noreferrer">
+                           <img src={gplay}/>
                         </a>
                     </Image>
                     <Image>
-                    <a href="https://play.google.com/store/apps/details?id=com.takemeabroad&hl=en_IN&gl=US" target="_blank" rel="noreferrer">
-                        <img src={gplay}/>
+                        <a href="#" target="_blank" rel="noreferrer">
+                           <img src={astore}/>
                         </a>
-
-                    </Image>
+                    </Image>                    
                  </Appstore>
               </Item>
               <Item>
@@ -121,12 +120,10 @@ img{
    display:flex;
    flex-directon:column;
    width:100% !important;
-   @media (max-width: 768px) {
-      background-image:url(${bimg});
-      background-position:center;
-      background-repeat:no-repeat;
-      background-size:100% 100%;
-    }
+   background-image:url(${bimg});
+   background-position:center;
+   background-repeat:no-repeat;
+   background-size:100% 100%;
 }
 `;
 const Item = styled.div`
